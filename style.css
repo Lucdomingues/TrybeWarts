@@ -36,3 +36,9 @@ main {
 .lado-lado {
   display: flex;
 }
+
+footer {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
