@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trybewarts</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div>
-            <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" />
+  <header class="header">
+    <div>
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" />
+    </div>
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <div>
+      <form action="" method="" class="trybewarts-login">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input type="password" name="password" id="password" placeholder="Senha" />
+        <button id="btn-enviar">Entrar</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <form id="evaluation-form">
+      <section id="input-form">
+        <div class="lado-lado">
+          <input type="text" nome="nome" id="input-name" placeholder="Nome">
+          <input type="text" nome="sobrenome" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <div>
-            <form action="" method="" class="trybewarts-login">
-                <input type="email" name="email" id="email" placeholder="Email" />
-                <input type="password" name="password" id="password" placeholder="Senha" />
-                <button id="btn-enviar">Entrar</button>
-            </form>
+        <div class="lado-lado">
+          <input type="email" nome="email" id="input-email" placeholder="Email">
+          <select name="" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
         </div>
-    </header>
-    <main>
-        <form id="evaluation-form">
-            <div id="input-form">
-                <input type="text" nome="nome" id="input-name" placeholder="Nome">
-                <input type="text" nome="sobrenome" id="input-lastname" placeholder="Sobrenome">
-                <input type="email" nome="email" id="input-email" placeholder="Email">
-            </div>
-            <select name="" id="house">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
-        </form>
-        <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-    </main>
-    <script src="script.js"></script>
+      </section>
+
+    </form>
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
