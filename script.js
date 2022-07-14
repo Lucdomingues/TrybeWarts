@@ -1,9 +1,9 @@
 const btnEnviar = document.getElementById('btn-enviar');
 const chex = document.getElementById('agreement');
-document.getElementById("submit-btn").disabled = true;
- 
+document.getElementById('submit-btn').disabled = true;
+
 function enviar(event) {
-  event.preventDefault()
+  event.preventDefault();
   const email = document.querySelector('#email').value;
   const senha = document.querySelector('#password').value;
   if (email === 'tryber@teste.com' && senha === '123456') {
@@ -17,9 +17,9 @@ function enviar(event) {
 
 function habilitar() {
   if (chex.checked === true) {
-    document.getElementById("submit-btn").disabled = false;
+    document.getElementById('submit-btn').disabled = false;
   } else {
-    document.getElementById("submit-btn").disabled = true;
+    document.getElementById('submit-btn').disabled = true;
   }
 }
 
