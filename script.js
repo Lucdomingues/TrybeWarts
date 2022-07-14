@@ -1,6 +1,7 @@
 const btnEnviar = document.getElementById('btn-enviar');
 const chex = document.getElementById('agreement');
-document.getElementById('submit-btn').disabled = true;
+const botao = document.getElementById('submit-btn');
+botao.disabled = true;
 
 function enviar(event) {
   event.preventDefault();
@@ -17,9 +18,9 @@ function enviar(event) {
 
 function habilitar() {
   if (chex.checked === true) {
-    document.getElementById('submit-btn').disabled = false;
+    botao.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    botao.disabled = true;
   }
 }
 
