@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trybewarts</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -17,29 +22,34 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <div>
       <form action="" method="" class="trybewarts-login">
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="password" name="password" id="password" placeholder="Senha" />
-        <button id="btn-enviar">Entrar</button>
+        <input type="email" name="email" id="email" placeholder="Email" class="espa" />
+        <input type="password" name="password" id="password" placeholder="Senha" class="espa" />
+        <button id="btn-enviar" class="espa">Entrar</button>
       </form>
     </div>
   </header>
   <main>
     <form id="evaluation-form">
+      <h1>Formulário de Avaliação</h1>
       <section id="input-form">
         <div class="lado-lado">
-          <input type="text" nome="nome" id="input-name" placeholder="Nome">
-          <input type="text" nome="sobrenome" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" nome="nome" id="input-name" class="espa input-fo" placeholder="Nome">
+          <input type="text" nome="sobrenome" id="input-lastname" class="espa input-fo" placeholder="Sobrenome">
         </div>
         <div class="lado-lado">
-          <input type="email" nome="email" id="input-email" placeholder="Email">
-          <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
+          <input type="email" nome="email" class="espa" id="input-email" placeholder="Email">
+          <div id="casa">
+            <label for="">Casa:</label>
+            <select name="" id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </div>
         </div>
       </section>
+      <hr>
       <section>
         <label for="" id="label-family">Qual sua família?</label>
         <div>
@@ -119,6 +129,7 @@
       <section>
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" name="agreement" id="agreement">
+
       </section>
       <section>
         <button type="submit" id="submit-btn">Enviar</button>
