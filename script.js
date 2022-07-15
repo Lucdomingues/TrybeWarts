@@ -1,7 +1,7 @@
 const btnEnviar = document.getElementById('btn-enviar');
 const chex = document.getElementById('agreement');
 const botao = document.getElementById('submit-btn');
-let text = document.getElementById('textarea');
+const text = document.getElementById('textarea');
 botao.disabled = true;
 
 function enviar(event) {
@@ -26,18 +26,12 @@ function habilitar() {
 }
 
 function contadorCaracteres() {
-  let quantidadeInicial = 500;
-  let quantidade = text.value;
-  quantidadeInicial = quantidadeInicial - (quantidade.length + 1);
+  let quantidadeInicial = 501;
+  const quantidade = text.value;
+  quantidadeInicial -= (quantidade.length + 1);
   document.getElementById('counter').innerText = quantidadeInicial;
-
-  if (text.keyCode == 46 || text.keyCode == 8) {
-    console.log('deletou');
-  }
 }
 
-
-
-text.addEventListener('keypress', contadorCaracteres)
+text.addEventListener('input', contadorCaracteres);
 chex.addEventListener('click', habilitar);
 btnEnviar.addEventListener('click', enviar);
