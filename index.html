@@ -32,6 +32,9 @@
     </div>
   </header>
   <main>
+    <form action="" id="form-data">
+     
+    </form>
     <form id="evaluation-form">
       <h1>Formulário de Avaliação</h1>
       <section id="input-form">
@@ -59,15 +62,15 @@
           <action id="action-1">
             <label for="" id="label-family">Qual sua família?</label>
             <div>
-              <input type="radio" name="family" value="Frontend" id="front">
+              <input type="radio" name="family" value="Frontend" id="front" class="familia">
               <label for="front">Frontend</label>
             </div>
             <div>
-              <input type="radio" name="family" value="Backend" id="back">
+              <input type="radio" name="family" value="Backend" id="back" class="familia">
               <label for="back">Backend</label>
             </div>
             <div>
-              <input type="radio" name="family" value="FullStack" id="full">
+              <input type="radio" name="family" value="FullStack" id="full" class="familia">
               <label for="full">FullStack</label>
             </div>
           </action>
@@ -158,7 +161,6 @@
       <section id="secao-concord">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" name="agreement" id="agreement" required>
-
       </section>
       <section id="secao-btn">
         <button type="submit" id="submit-btn">Enviar</button>
