@@ -35,8 +35,6 @@ function enviar(event) {
   } else {
     alert('Email ou senha inválidos.');
   }
-  console.log(senha);
-  console.log(email);
 }
 
 function habilitar() {
