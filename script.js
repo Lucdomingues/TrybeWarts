@@ -5,24 +5,26 @@ const text = document.getElementById('textarea');
 const form1 = document.getElementById('evaluation-form');
 const form2 = document.getElementById('form-data');
 botao.disabled = true;
+let novaVar = '';
 
 function botaoEnviar(event) {
   event.preventDefault();
   form1.style.display = 'none';
-  const nome = document.querySelector('#input-name').value;
-  const sobreNome = document.querySelector('#input-lastname').value;
-  const email1 = document.querySelector('#input-email').value;
-  const casa = document.querySelector('#house').value;
-  const textarea = document.querySelector('#textarea').value;
-  const obj = {
-    Nome: `${nome} ${sobreNome}`,
-    Email: email1,
-    Casa: casa,
-    Observações: textarea,
-  };
+  const nome = document.getElementById('input-name').value;
+  const sobreNome = document.getElementById('input-lastname').value;
+  const email1 = document.getElementById('input-email').value;
+  const casa = document.getElementById('house').value;
+  const textarea = document.getElementById('textarea').value;
+  const familia = document.querySelector('input[name="family"]:checked').value;
+  const conteudo = document.querySelectorAll('input[class="subject"]:checked');
+  const avaliacao = document.querySelector('input[name="rate"]:checked').value;
+  for (let i = 0; i < conteudo.length; i += 1) {
+    novaVar += `${conteudo[i].value}, `;
+  }
   const novoElemento = document.createElement('p');
-  novoElemento.innerText = `Nome: ${obj.Nome}\nEmail: ${obj.Email}
-  Casa: ${obj.Casa}\nFamilia: ${obj.Familia}\nObservações: ${obj.Observações}`;
+  novoElemento.innerText = `Nome: ${nome} ${sobreNome}\nEmail: ${email1}
+  Casa: ${casa}\nFamília: ${familia}\nMatérias: ${novaVar}
+  Avaliação: ${avaliacao}\nObservações: ${textarea}`;
   form2.appendChild(novoElemento);
 }
 
