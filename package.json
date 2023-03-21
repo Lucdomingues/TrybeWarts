@@ -1,6 +1,7 @@
 {
   "name": "sd-0x-project-trybewarts",
   "version": "1.0.0",
+  "homepage": "https://Lucdomingues.github.io/TrybeWarts.github.io",
   "description": "Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.",
   "main": "script.js",
   "scripts": {
@@ -10,7 +11,7 @@
     "test": "cypress run",
     "cy:browser": "cypress run --headless --browser chrome",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": "16"
